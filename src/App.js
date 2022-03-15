@@ -20,6 +20,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <input type="search" placeholder="search memebers" />
         <CardList members={this.state.members} />
       </div>
     );
