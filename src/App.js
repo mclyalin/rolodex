@@ -5,26 +5,15 @@ class App extends React.Component {
   constructor() {
     super();
 
-    this.state = {
-      members: [
-        {
-          name: 'Papa',
-          id: 'id1'
-        },
-        {
-          name: 'Mama',
-          id: 'id1'
-        },
-        {
-          name: 'Child1',
-          id: 'id1'
-        },
-        {
-          name: 'Child2',
-          id: 'id1'
-        },
-      ],
+    this.state = { 
+      members: [],
     };
+  }
+
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then(response => response.json())
+      .then(users => this.setState({ members: users }));
   }
 
   render() {
