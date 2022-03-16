@@ -8,6 +8,7 @@ class App extends React.Component {
 
     this.state = { 
       members: [],
+      searchField: '',
     };
   }
 
@@ -18,10 +19,18 @@ class App extends React.Component {
   }
 
   render() {
+    const { members, searchField } = this.state;
+    const filteredMembers = members.filter(member =>
+      member.name.toLowerCase().includes(searchField.toLowerCase())
+    );
     return (
       <div className="App">
-        <input type="search" placeholder="search memebers" />
-        <CardList members={this.state.members} />
+        <input
+          type="search"
+          placeholder="search memebers"
+          onChange={e => this.setState({ searchField: e.target.value })}
+        />
+        <CardList members={filteredMembers} />
       </div>
     );
   }
