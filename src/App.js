@@ -19,6 +19,10 @@ class App extends React.Component {
       .then(users => this.setState({ members: users }));
   }
 
+  handleChange = e => {
+    this.setState({ searchField: e.target.value });
+  };
+
   render() {
     const { members, searchField } = this.state;
     const filteredMembers = members.filter(member =>
@@ -28,7 +32,7 @@ class App extends React.Component {
       <div className="App">
         <SearchBox
           placeholder="search memebers"
-          handleChange={e => this.setState({ searchField: e.target.value })}
+          handleChange={this.handleChange}
         />
         <CardList members={filteredMembers} />
       </div>
