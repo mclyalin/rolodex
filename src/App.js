@@ -30,6 +30,7 @@ class App extends React.Component {
     );
     return (
       <div className="App">
+        <h1> Loonies </h1>
         <SearchBox handleChange={this.handleChange} />
         <CardList members={filteredMembers} />
       </div>
