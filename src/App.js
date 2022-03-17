@@ -30,10 +30,7 @@ class App extends React.Component {
     );
     return (
       <div className="App">
-        <SearchBox
-          placeholder="search memebers"
-          handleChange={this.handleChange}
-        />
+        <SearchBox handleChange={this.handleChange} />
         <CardList members={filteredMembers} />
       </div>
     );
