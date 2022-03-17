@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mclyalin/rolodex/static/css/main.3b0bb2d8.css",
+    "main.js": "/mclyalin/rolodex/static/js/main.39416bf5.js",
+    "static/js/787.50800559.chunk.js": "/mclyalin/rolodex/static/js/787.50800559.chunk.js",
+    "index.html": "/mclyalin/rolodex/index.html",
+    "main.3b0bb2d8.css.map": "/mclyalin/rolodex/static/css/main.3b0bb2d8.css.map",
+    "main.39416bf5.js.map": "/mclyalin/rolodex/static/js/main.39416bf5.js.map",
+    "787.50800559.chunk.js.map": "/mclyalin/rolodex/static/js/787.50800559.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b0bb2d8.css",
+    "static/js/main.39416bf5.js"
+  ]
+}
