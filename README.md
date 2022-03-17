@@ -1,1 +1,1 @@
-# Educational project 'Rolodex'
+## Educational project '[Rolodex](https://mclyalin.github.io/rolodex/) ~~of loonies~~'
